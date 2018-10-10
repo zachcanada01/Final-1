@@ -1,6 +1,5 @@
 package project;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -8,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		boolean playing = true;
 		boolean x = true;
-		
+		 
 		Scanner input = new Scanner(System.in);
 	//	WinsAndLoses.displayWAL();
 		TicTacToe tictoe = new TicTacToe();
@@ -25,8 +24,6 @@ public class Main {
 				
 				x = !x;
 				
-				System.out.println("Type OKAY to continue >>");
-				input.next();
 			} else {
 				System.out.println("Player O Input a Number");
 				tictoe.placePiece("O", input.nextInt());
@@ -35,15 +32,10 @@ public class Main {
 				
 				x = !x;
 				
-				System.out.println("Type OKAY  to continue >>");
-				input.next();
 			}
 			
-			
-			if (tictoe.win())
-				System.out.println((x ? "o" : "x") + " Winner");
 		}
-		
+	
 	}
 
 }
