@@ -39,7 +39,7 @@ public class TicTacToe {
 				o++;
 		}
 		
-		if (x >= 3 || o >= 3)
+		if (x == 0 + 1 + 2 || o >= 3)
 			return checkWin();
 		
 		return false;

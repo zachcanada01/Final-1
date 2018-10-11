@@ -3,20 +3,25 @@ package main;
 import java.io.IOException;
 import java.util.Scanner;
 
+
+
 public class Main {
 
 	public static void main(String[] args) {
 		boolean playing = true;
 		boolean x = true;
 		
+		
 		Scanner input = new Scanner(System.in);
-	//	WinsAndLoses.displayWAL();
+		//WinsLosses winloss = new WinsLosses();
 		TicTacToe tictoe = new TicTacToe();
 		
+		//WinsLosses.displaywinLosses();
 		tictoe.displayTemplate();
 		
 		
-		while (playing) {
+		
+		while(playing) {
 			if (x) {
 				System.out.println("Player X Input a Number");
 				tictoe.placePiece("X", input.nextInt());
@@ -25,8 +30,7 @@ public class Main {
 				
 				x = !x;
 				
-				System.out.println("Type OKAY to continue >>");
-				input.next();
+			
 			} else {
 				System.out.println("Player O Input a Number");
 				tictoe.placePiece("O", input.nextInt());
@@ -35,14 +39,17 @@ public class Main {
 				
 				x = !x;
 				
-				System.out.println("Type OKAY  to continue >>");
-				input.next();
+		
 			}
 			
 			
 			if (tictoe.win())
-				System.out.println((x ? "o" : "x") + " Winner");
+				System.out.println((x ? "O" : "X") + " Winner");
+			
+		
 		}
+		;
+
 		
 	}
 
