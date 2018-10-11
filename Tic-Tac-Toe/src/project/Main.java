@@ -9,7 +9,7 @@ public class Main {
 		boolean x = true;
 		 
 		Scanner input = new Scanner(System.in);
-	//	WinsAndLoses.displayWAL();
+		WinsLosses.displayWL();
 		TicTacToe tictoe = new TicTacToe();
 		
 		tictoe.displayTemplate();
@@ -33,6 +33,8 @@ public class Main {
 				x = !x;
 				
 			}
+			if(tictoe.win())
+				System.out.println((x ? "O" : "X" + "Winner"));
 			
 		}
 	
