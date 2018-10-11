@@ -35,7 +35,8 @@ public class Main {
 			}
 			if(tictoe.win())
 				System.out.println((x ? "O" : "X" + "Winner"));
-			
+			if(tictoe.win())
+				return;
 		}
 	
 	}
