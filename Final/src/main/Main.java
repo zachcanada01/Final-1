@@ -38,17 +38,18 @@ public class Main {
 				tictoe.displayMap();
 				
 				x = !x;
+				return;
 				
 		
 			}
 			
 			
-			if (tictoe.win())
+			if (TicTacToe.win() != null)
 				System.out.println((x ? "O" : "X") + " Winner");
 			
 		
 		}
-		;
+		
 
 		
 	}
