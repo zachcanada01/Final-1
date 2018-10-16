@@ -1,5 +1,7 @@
 package project;
 
+import java.util.Arrays;
+
 public class TicTacToe {
 	static String[] board = {
 			"0","1","2",
@@ -54,6 +56,7 @@ public class TicTacToe {
 				return "O";
 			}
 		}
+		
 			return null;
 	}
 	public void displayMap() {
