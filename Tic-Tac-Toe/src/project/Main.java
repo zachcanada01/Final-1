@@ -9,13 +9,12 @@ public class Main {
 		boolean x = true;
 		 
 		Scanner input = new Scanner(System.in);
-		WinsLosses.displayWL();
 		TicTacToe tictoe = new TicTacToe();
 		
 		tictoe.displayTemplate();
 		
 		
-		while (playing) {
+		do {
 			if (x) {
 				System.out.println("Player X Input a Number");
 				tictoe.placePiece("X", input.nextInt());
@@ -33,11 +32,12 @@ public class Main {
 				x = !x;
 				
 			}
-			if(tictoe.win())
-				System.out.println((x ? "O" : "X" + "Winner"));
-			if(tictoe.win())
+			if(TicTacToe.Win() != null) {
+				System.out.println((x ? "O" : "X") + "Winner");
 				return;
-		}
+			}
+			
+		}while(playing);
 	
 	}
 
