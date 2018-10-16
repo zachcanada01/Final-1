@@ -21,7 +21,7 @@ public class Main {
 		
 		
 		
-		while(playing) {
+		 do {
 			if (x) {
 				System.out.println("Player X Input a Number");
 				tictoe.placePiece("X", input.nextInt());
@@ -29,6 +29,7 @@ public class Main {
 				tictoe.displayMap();
 				
 				x = !x;
+				
 				
 			
 			} else {
@@ -38,17 +39,26 @@ public class Main {
 				tictoe.displayMap();
 				
 				x = !x;
-				return;
+				
 				
 		
 			}
 			
 			
 			if (TicTacToe.win() != null)
+			{
 				System.out.println((x ? "O" : "X") + " Winner");
+				 
+				
+					
+				
+
 			
+			return;
+			}
 		
-		}
+		
+		}while(playing);
 		
 
 		

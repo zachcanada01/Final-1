@@ -59,6 +59,11 @@ public class TicTacToe {
 			if(line.equals("OOO")) {
 				return"o";
 			}
+			if(a == 9) {
+				System.out.println("Draw");
+			}
+			
+		
 		}
 		return null;
 		
