@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Welcome to tic tac toe ");
+		System.out.println("\n  Welcome to tic tac toe ");
 		
 		
 		gamePlay.displayGame();

@@ -14,7 +14,7 @@ public class gamePlay {
 		tictoe.displayTemplate();
 		do {
 			if (x) {
-				System.out.println("Player X Input a Number>>");
+				System.out.println("\n Player X Input a Number>>");
 				tictoe.placePiece("X", input.nextInt());
 				
 				tictoe.displayMap();
@@ -24,7 +24,7 @@ public class gamePlay {
 				
 			
 			} else {
-				System.out.println("Player O Input a Number>>");
+				System.out.println("\n Player O Input a Number>>");
 				tictoe.placePiece("O", input.nextInt());
 				
 				tictoe.displayMap();
