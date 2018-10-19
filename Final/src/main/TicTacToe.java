@@ -1,4 +1,7 @@
+
 package main;
+
+
 
 public class TicTacToe {
 
@@ -10,11 +13,11 @@ public class TicTacToe {
 
 	public void displayTemplate() {
 		System.out.println("" 
-		+ "\n0|1|2"
-		+ "\n-----"
-		+ "\n3|4|5"
-		+ "\n-----"
-		+ "\n6|7|8");
+		+ "\n        0 | 1 | 2"
+		+ "\n       -----------"
+		+ "\n        3 | 4 | 5"
+		+ "\n       -----------"
+		+ "\n        6 | 7 | 8\n");
 	}
 	
 	
@@ -59,9 +62,8 @@ public class TicTacToe {
 			if(line.equals("OOO")) {
 				return"o";
 			}
-			if(a == 9) {
-				System.out.println("Draw");
-			}
+	
+			
 			
 		
 		}
@@ -70,13 +72,17 @@ public class TicTacToe {
 	}
 	public void displayMap() {
 		System.out.println("" 
-				+ "\n" + board[0] + "|" + board[1] + "|" + board[2] + ""
-				+ "\n-----"
-				+ "\n" + board[3] + "|" + board[4] + "|" + board[5] + ""
-				+ "\n-----"
-				+ "\n" + board[6] + "|" + board[7] + "|" + board[8] + "");
+				+ "\n        " + board[0] + " | " + board[1] + " | " + board[2] + ""
+				+ "\n       -----------"
+				+ "\n        " + board[3] + " | " + board[4] + " | " + board[5] + ""
+				+ "\n       -----------"
+				+ "\n        " + board[6] + " | " + board[7] + " | " + board[8] + "\n");
 	}
 	
-	
+
 }
 
+
+
+
+	
